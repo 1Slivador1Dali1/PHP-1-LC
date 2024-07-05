@@ -48,3 +48,12 @@ function ret()
 
 echo $num += ret();
 ?>
+<br>
+<br>
+<?php 
+function argument($arg) {
+    return 2024 - $arg;
+};
+
+echo argument(2001);
+?>
