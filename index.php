@@ -57,3 +57,13 @@ function argument($arg) {
 
 echo argument(2001);
 ?>
+<br>
+<br>
+<?php 
+function pw($num1, $num2) {
+    return $num1 ** $num2;
+};
+echo pw(2,3);
+echo ' and ';
+echo pow(2,2); // Зарезервированный метод(функции)
+?>
