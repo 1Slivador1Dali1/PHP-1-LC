@@ -40,7 +40,7 @@ hello();
 ?>
 <br>
 <br>
-<?php 
+<?php
 function ret()
 {
     return 10;
@@ -50,8 +50,9 @@ echo $num += ret();
 ?>
 <br>
 <br>
-<?php 
-function argument($arg) {
+<?php
+function argument($arg)
+{
     return 2024 - $arg;
 };
 
@@ -59,25 +60,35 @@ echo argument(2001);
 ?>
 <br>
 <br>
-<?php 
-function pw($num1, $num2) {
+<?php
+function pw($num1, $num2)
+{
     return $num1 ** $num2;
 };
-echo pw(2,3);
+echo pw(2, 3);
 echo ' and ';
-echo pow(2,2); // Зарезервированный метод(функции)
+echo pow(2, 2); // Зарезервированный метод(функции)
 ?>
 <br>
 <br>
-<?php 
+<?php
 $foo = 'animal';
-$foo = ucfirst($foo);// Работа со строками делает первую букву заглавной
+$foo = ucfirst($foo); // Работа со строками делает первую букву заглавной
 echo $foo;
 ?>
 <br>
 <br>
-<?php 
+<?php
 $string = 'some string 10';
-$string = str_replace(' 10', '', $string);// 1) что заменить 2) на что 3) где
+$string = str_replace(' 10', '', $string); // 1) что заменить 2) на что 3) где
 echo $string;
+?>
+<br>
+<br>
+<?php
+$array = ['qwe', 'second' => 'asd'];
+var_dump(implode(", ", $array));
+array_push($array, 'zxc');
+var_dump(implode(", ", $array));
+print_r($array);
 ?>
