@@ -67,3 +67,17 @@ echo pw(2,3);
 echo ' and ';
 echo pow(2,2); // Зарезервированный метод(функции)
 ?>
+<br>
+<br>
+<?php 
+$foo = 'animal';
+$foo = ucfirst($foo);// Работа со строками делает первую букву заглавной
+echo $foo;
+?>
+<br>
+<br>
+<?php 
+$string = 'some string 10';
+$string = str_replace(' 10', '', $string);// 1) что заменить 2) на что 3) где
+echo $string;
+?>
